@@ -1,9 +1,10 @@
 import Head from 'next/head'
-import Navigation from './Navigation'
+import Navigation from '../components/Navigation'
+import About from '../components/About'
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Raul Carini</title>
         <meta name="description" content="Portfolio of Raul Carini"/>
@@ -13,10 +14,11 @@ export default function Home() {
       <Navigation/>
 
       <main>
+      <About/>
       </main>
 
       <footer>
       </footer>
-    </div>
+    </>
   )
 }
