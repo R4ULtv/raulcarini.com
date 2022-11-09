@@ -51,7 +51,7 @@ export default function Navigation() {
               <span className="sr-only">Raul Carini</span>
               <img
                 className="h-8 w-auto sm:h-10"
-                src="/logo.svg"
+                src="/assets/svg/logo.svg"
                 alt=""
               />
             </a>
