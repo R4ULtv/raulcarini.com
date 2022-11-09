@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navigation from '../components/Navigation'
 import About from '../components/About'
+import Projects from '../components/Projects'
 
 export default function Home() {
   return (
@@ -10,11 +11,14 @@ export default function Home() {
         <meta name="description" content="Portfolio of Raul Carini"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Navigation/>
+      
+      <nav>
+        <Navigation/>
+      </nav>
 
       <main>
       <About/>
+      <Projects/>
       </main>
 
       <footer>
