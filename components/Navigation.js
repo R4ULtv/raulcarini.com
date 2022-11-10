@@ -95,7 +95,7 @@ export default function Navigation() {
                 <div>
                   <img
                     className="h-8 w-auto"
-                    src="/logo.svg"
+                    src="/assets/svg/logo.svg"
                     alt="Your Company"
                   />
                 </div>

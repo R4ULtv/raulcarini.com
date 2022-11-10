@@ -1,39 +1,37 @@
-import React, { useState } from 'react';
-
-const images = [
-    {
-        title: "SIFFREDI BOT",
-        url: "https://github.com/R4ULtv/siffredi-bot",
-        src: image("siffredi-bot")
-    },
-    {
-        title: "CHAT ROOM",
-        url: "https://github.com/R4ULtv/socket-live-chat",
-        src: image("chat-room-socket")
-    },
-    {
-        title: "SECURITY CAMERA",
-        url: "https://github.com/R4ULtv/security-camera-OpenCV",
-        src: image("security-camera-opencv")
-    },
-    {
-        title: "EASY PROJECTS",
-        url: "https://github.com/R4ULtv/easy-project",
-        src: image("easy-projects")
-    },
-    {
-        title: "PYTHON BASICS",
-        url: "https://github.com/R4ULtv/python-basics",
-        src: image("python-basics")
-    },
-]
-
-function image(type) {
-    var random = Math.floor(Math.random() * 5) + 1
-    return "/assets/img/projects/" + type + "/" + random + ".png"
-}
-
 export default function Projects() {
+    const images = [
+        {
+            title: "SIFFREDI BOT",
+            url: "https://github.com/R4ULtv/siffredi-bot",
+            src: image("siffredi-bot")
+        },
+        {
+            title: "CHAT ROOM",
+            url: "https://github.com/R4ULtv/socket-live-chat",
+            src: image("chat-room-socket")
+        },
+        {
+            title: "SECURITY CAMERA",
+            url: "https://github.com/R4ULtv/security-camera-OpenCV",
+            src: image("security-camera-opencv")
+        },
+        {
+            title: "EASY PROJECTS",
+            url: "https://github.com/R4ULtv/easy-project",
+            src: image("easy-projects")
+        },
+        {
+            title: "PYTHON BASICS",
+            url: "https://github.com/R4ULtv/python-basics",
+            src: image("python-basics")
+        },
+    ]
+    
+    function image(type) {
+        var random = Math.floor(Math.random() * 5) + 1
+        return "/assets/img/projects/" + type + "/" + random + ".png"
+    }
+
     return (
         <div className="p-10" id="projects">
             <h2 className="text-center text-3xl font-bold text-blue-600">Projects</h2>
