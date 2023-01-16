@@ -65,7 +65,7 @@ export default function Home({skills, projects}) {
       {/* <Contacts/> */}
       </main>
 
-      {/* <Footer/> */}
+      <Footer/>
     </>
   )
 }
