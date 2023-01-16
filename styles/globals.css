@@ -21,3 +21,11 @@ body {
   background: #2563eb;
   border-radius: 15px;
 }
+
+#terms p{
+  margin-bottom: 0.25rem;
+}
+
+#terms span{
+  font-weight: bold;
+}

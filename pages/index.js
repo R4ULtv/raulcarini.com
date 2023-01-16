@@ -49,14 +49,12 @@ export default function Home({skills, projects}) {
   return (
     <>
       <Head>
-        <title>Raul Carini</title>
+        <title>Home - Raul Carini</title>
         <meta name="description" content="Portfolio of Raul Carini"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <nav>
-        <Navigation/>
-      </nav>
+      <Navigation/>
 
       <main>
       <About/>
