@@ -8,8 +8,8 @@ export default function Terms() {
     return (
         <>
       <Head>
-        <title>Raul Carini</title>
-        <meta name="description" content="Portfolio of Raul Carini"/>
+        <title>Terms and Conditions - Raul Carini</title>
+        <meta name="description" content="Terms and Conditions of Raul Carini"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
