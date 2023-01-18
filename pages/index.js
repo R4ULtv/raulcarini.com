@@ -57,10 +57,10 @@ export default function Home({skills, projects}) {
       <Navigation/>
 
       <main>
-      <About/>
-      <Skills image = {skills}/>
-      <Projects images = {projects}/>
-      {/* <Contacts/> */}
+        <About/>
+        <Skills image = {skills}/>
+        <Projects images = {projects}/>
+        {/* <Contacts/> */}
       </main>
 
       <Footer/>
