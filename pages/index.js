@@ -4,7 +4,6 @@ import Navigation from '../components/Navigation'
 import About from '../components/About'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
-import Contacts from '../components/Contact'
 import Footer from '../components/Footer'
 
 export async function getStaticProps(){
@@ -60,7 +59,6 @@ export default function Home({skills, projects}) {
         <About/>
         <Skills image = {skills}/>
         <Projects images = {projects}/>
-        {/* <Contacts/> */}
       </main>
 
       <Footer/>
