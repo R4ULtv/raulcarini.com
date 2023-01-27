@@ -7,8 +7,8 @@ export default function About() {
             <div className="grid md:grid-cols-2 md:items-center md:text-start max-w-5xl font-semibold text-center mx-auto gap-x-8 my-8 justify-items-center">
                 <Image src="/assets/img/about.jpg" height="400" width="300" quality="100" className="rounded-lg hover:scale-110 duration-150" alt="Thats Me ;)"/>
                 <div className="">
-                    <h3 className="text-3xl my-6">I am Raul Carini</h3>
-                    <p className="text-lg">Hi I'm Raul Carini, I'm 19 and I'm an Italian student and programmer, I study in a computer school and in my free time I am at the computer writing code a bit like losers ツ. I am constantly working on improving my <a href="https://siffredi.bot" className="text-blue-600 font-semibold">Siffredi-Bot</a> on <a href="https://github.com/Rapptz/discord.py" className="text-blue-600 font-semibold">discord.py</a>.</p>
+                    <h3 className="text-3xl my-6">Hi, I'm Raul Carini</h3>
+                    <p className="text-lg">I am a computer science student. I have always been interested in technology from a young age and decided to pursue this career because it allows me to develop my creative. <br></br>I enjoy working on projects that utilize the latest technologies and like experimenting with new ideas. <br></br>I am always looking for new opportunities to learn and grow professionally. I hope to continue to progress in my academic and professional path and become an expert professional in my field of interest.</p>
                 </div>
             </div>  
         </div>

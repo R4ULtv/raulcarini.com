@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 
 export async function getStaticProps(){
   var random = Math.floor(Math.random() * 5) + 1
-  var skills = "/assets/img/skills/" + random + ".png"
+  var skills_image = "/assets/img/skills/" + random + ".png"
   var projects = [
     {
         title: "SIFFREDI BOT",
@@ -36,15 +36,34 @@ export async function getStaticProps(){
         src: "/assets/img/projects/python-basics/" + random + ".png"
     },
   ]
+  var skills = [
+    {
+      language: "PYTHON",
+      percentage: "85%"
+    },
+    {
+      language: "JAVASCRIPT",
+      percentage: "75%"
+    },
+    {
+      language: "HTML/CSS",
+      percentage: "90%"
+    },
+    {
+      language: "JAVA",
+      percentage: "50%"
+    }
+  ]
     return {
       props : {
         skills: skills,
+        skills_image: skills_image,
         projects: projects
       }
     }
 }
 
-export default function Home({skills, projects}) {
+export default function Home({skills, skills_image, projects}) {
   return (
     <>
       <Head>
@@ -57,7 +76,7 @@ export default function Home({skills, projects}) {
 
       <main>
         <About/>
-        <Skills image = {skills}/>
+        <Skills image = {skills_image} skills = {skills}/>
         <Projects images = {projects}/>
       </main>
 
