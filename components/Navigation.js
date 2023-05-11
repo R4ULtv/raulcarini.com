@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router';
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
@@ -44,9 +45,9 @@ const resources = [
 
 export default function Navigation() {
   return (
-    <Popover className="bg-white">
+    <Popover className="fixed z-10 w-full backdrop-filter backdrop-blur-md">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+        <div className="flex items-center justify-between border-b-2 border-blue-100 py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             {/* <a href="#">
               <span className="sr-only">Raul Carini</span>
@@ -66,23 +67,19 @@ export default function Navigation() {
           <Popover.Group as="nav" className="hidden space-x-10 md:flex">
                 {resources.map((item) => (
                   item.href == "/" ?(
-                    <Link
-                    key={item.name}
-                    href={item.href}
-                    className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
-                    >
-                    <item.icon className="h-6 w-6 flex-shrink-0 text-blue-600" aria-hidden="true" />
-                    <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
+                    <Link key={item.name} href={item.href} className="-m-3 flex items-center rounded-lg p-3 bg-blue-100">
+                      <item.icon className="h-6 w-6 flex-shrink-0 text-blue-600" aria-hidden="true" />
+                      <span className="ml-3 text-base font-semibold text-gray-900">{item.name}</span>
                     </Link>
                   )
                   : (
                     <a
                     key={item.name}
                     href={item.href}
-                    className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
+                    className="-m-3 flex items-center rounded-lg p-3 hover:bg-blue-50"
                     >
                     <item.icon className="h-6 w-6 flex-shrink-0 text-blue-600" aria-hidden="true" />
-                    <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
+                    <span className="ml-3 text-base font-semibold text-gray-900">{item.name}</span>
                     </a>
                   )
                 ))} 
@@ -121,16 +118,20 @@ export default function Navigation() {
               </div>
               <div className="mt-6">
                 <nav className="grid gap-y-8">
-                    {resources.map((item) => (
-                        <a
-                        key={item.name}
-                        href={item.href}
-                        className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
-                        >
+                  {resources.map((item) => (
+                    item.href == "/" ?(
+                      <Link key={item.name} href={item.href} className="-m-3 flex items-center rounded-lg p-3 bg-blue-100">
                         <item.icon className="h-6 w-6 flex-shrink-0 text-blue-600" aria-hidden="true" />
-                        <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
-                        </a>
-                    ))}
+                        <span className="ml-3 text-base font-semibold text-gray-900">{item.name}</span>
+                      </Link>
+                    )
+                    : (
+                      <a key={item.name} href={item.href} className="-m-3 flex items-center rounded-md p-3 hover:bg-blue-50">
+                        <item.icon className="h-6 w-6 flex-shrink-0 text-blue-600" aria-hidden="true" />
+                        <span className="ml-3 text-base font-semibold text-gray-900">{item.name}</span>
+                      </a>
+                    )
+                  ))} 
                 </nav>
               </div>
             </div>

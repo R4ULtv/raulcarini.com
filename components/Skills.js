@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Skills(data) {
     return (
-        <div className="p-10 animate-fadeIn" id="skills">
+        <div className="pt-20 p-10 animate-fadeIn" id="skills">
             <h2 className="text-center text-3xl font-bold text-blue-600 underline underline-offset-8">Skills</h2>
             <div className="grid md:grid-cols-2 md:items-center md:text-start max-w-5xl font-semibold text-center mx-auto gap-x-8 gap-y-8 my-8 justify-items-center">
                 <div>
@@ -18,7 +18,6 @@ export default function Skills(data) {
                             </div>
                         </div>
                     ))}
-                    
                 </div>
                 <Image src={data.image} height="384" width="384" quality="100" alt="raul carini skills" className="w-96 h-auto rounded-lg hover:scale-110 duration-150"/>
             </div>  

@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function About() {
     return (
-        <div className="p-10 animate-fadeIn" id="about">
+        <div className="pt-20 p-10 animate-fadeIn" id="about">
             <h2 className="text-center text-3xl font-bold text-blue-600 underline underline-offset-8">About</h2>
             <div className="grid md:grid-cols-2 md:items-center md:text-start max-w-5xl font-semibold text-center mx-auto gap-x-8 my-8 justify-items-center">
                 <Image src="/assets/img/about.jpg" height="400" width="300" quality="100" className="rounded-lg hover:scale-110 duration-150" alt="Thats Me ;)"/>
