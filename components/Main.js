@@ -3,7 +3,7 @@ export default function Main() {
         <div className="grid grid-cols-1 max-w-5xl m-auto h-screen">
             <div className="self-center">
                 <h1 className="text-6xl font-bold mb-8 leading-relaxed">Hi,<br/>I'm <span className="text-blue-600">Raul Carini</span><br/>Developer</h1>
-                <button className="bg-blue-600 py-3 px-10 rounded-lg text-white font-bold hover:shadow-lg">Contact</button>
+                <a className="bg-blue-600 py-3 px-10 rounded-lg text-white font-bold hover:shadow-lg" href="#contacts">Contact</a>
             </div>
             <div className="">
                 

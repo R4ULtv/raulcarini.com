@@ -15,7 +15,7 @@ export default function Privacy() {
       
     <Navigation/>
 
-      <main className="p-10 text-justify text-gray-900 grid" id="terms">
+      <main className="pt-20 p-10 text-justify text-gray-900 grid" id="terms">
         <div className="place-self-center max-w-5xl">
             <h1 className="text-3xl font-bold text-blue-600 mb-2">Privacy Policy</h1>
             <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>

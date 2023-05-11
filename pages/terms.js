@@ -15,7 +15,7 @@ export default function Terms() {
       
     <Navigation/>
 
-      <main className="p-10 text-justify text-gray-900 grid" id="terms">
+      <main className="pt-20 p-10 text-justify text-gray-900 grid" id="terms">
         <div className="place-self-center max-w-5xl">
             <h1 className="text-3xl font-bold text-blue-600 mb-2">Terms and Conditions</h1>
             <p>Please read these terms and conditions carefully before using Our Service.</p>
