@@ -76,6 +76,10 @@ export default function Home({skills, skills_image, projects}) {
         <meta property="og:description" content="Portfolio of Raul Carini" />
         <meta property="og:url" content="https://www.raulcarini.com"></meta>
         <meta property="og:image" content="/api/og/image"/>
+        <meta property="twitter:title" content="Home - Raul Carini"></meta>
+        <meta property="twitter:description" content="Portfolio of Raul Carini"></meta>
+        <meta property="twitter:card" content="summary_large_image"></meta>
+        <meta property="twitter:image" content="/api/og/image"></meta>
       </Head>
       
       <Navigation/>
