@@ -72,6 +72,10 @@ export default function Home({skills, skills_image, projects}) {
         <title>Home - Raul Carini</title>
         <meta name="description" content="Portfolio of Raul Carini"/>
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="Home - Raul Carini"></meta>
+        <meta property="og:description" content="Portfolio of Raul Carini" />
+        <meta property="og:url" content="https://www.raulcarini.com"></meta>
+        <meta property="og:image" content="/api/og/image"/>
       </Head>
       
       <Navigation/>
