@@ -6,6 +6,7 @@ import Skills from '../components/Skills'
 import Projects from '../components/Projects'
 import Footer from '../components/Footer'
 import Main from '../components/Main'
+import Contacts from '../components/Contacts'
 
 export async function getStaticProps(){
   var random = Math.floor(Math.random() * 5) + 1
@@ -80,6 +81,7 @@ export default function Home({skills, skills_image, projects}) {
         <About/>
         <Skills image = {skills_image} skills = {skills}/>
         <Projects images = {projects}/>
+        <Contacts/>
       </main>
 
       <Footer/>
