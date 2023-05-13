@@ -1,7 +1,7 @@
 import Head from "next/head"
 import Link from "next/link"
 
-import Navigation from "../components/Navigation"
+import Navigation from "../components/Navigation2"
 import Footer from "../components/Footer"
 
 export default function Terms() {
@@ -18,6 +18,7 @@ export default function Terms() {
       <main className="pt-20 p-10 text-justify text-gray-900 grid" id="terms">
         <div className="place-self-center max-w-5xl">
             <h1 className="text-3xl font-bold text-blue-600 mb-2">Terms and Conditions</h1>
+            <p>Last updated: May 13, 2023</p>
             <p>Please read these terms and conditions carefully before using Our Service.</p>
             <h1 className="text-3xl font-bold text-blue-600 mb-2">Interpretation and Definitions</h1>
             <h2 className="text-2xl font-bold text-blue-700 mb-1">Interpretation</h2>
@@ -25,33 +26,33 @@ export default function Terms() {
             <h2 className="text-2xl font-bold text-blue-700 mb-1">Definitions</h2>
             <p>For the purposes of these Terms and Conditions:</p>
             <ul>
-            <li>
-            <p><strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where &quot;control&quot; means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</p>
-            </li>
-            <li>
-            <p><strong>Country</strong> refers to: Italy</p>
-            </li>
-            <li>
-            <p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Raul Carini.</p>
-            </li>
-            <li>
-            <p><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</p>
-            </li>
-            <li>
-            <p><strong>Service</strong> refers to the Website.</p>
-            </li>
-            <li>
-            <p><strong>Terms and Conditions</strong> (also referred as &quot;Terms&quot;) mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement has been created with the help of the <a href="https://www.termsfeed.com/terms-conditions-generator/" target="_blank">TermsFeed Terms and Conditions Generator</a>.</p>
-            </li>
-            <li>
-            <p><strong>Third-party Social Media Service</strong> means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.</p>
-            </li>
-            <li>
-            <p><strong>Website</strong> refers to Raul Carini, accessible from <Link href="/" className="text-blue-600">https://www.raulcarini.com</Link></p>
-            </li>
-            <li>
-            <p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
-            </li>
+              <li>
+                <p><strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where &quot;control&quot; means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</p>
+              </li>
+              <li>
+                <p><strong>Country</strong> refers to: Italy</p>
+              </li>
+              <li>
+                <p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Raul Carini.</p>
+              </li>
+              <li>
+                <p><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</p>
+              </li>
+              <li>
+                <p><strong>Service</strong> refers to the Website.</p>
+              </li>
+              <li>
+                <p><strong>Terms and Conditions</strong> (also referred as &quot;Terms&quot;) mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement has been created with the help of the <a href="https://www.termsfeed.com/terms-conditions-generator/" target="_blank">TermsFeed Terms and Conditions Generator</a>.</p>
+              </li>
+              <li>
+                <p><strong>Third-party Social Media Service</strong> means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.</p>
+              </li>
+              <li>
+                <p><strong>Website</strong> refers to Raul Carini, accessible from <Link href="https://www.raulcarini.com" className="text-blue-600">www.raulcarini.com</Link></p>
+              </li>
+              <li>
+                <p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
+              </li>
             </ul>
             <h1 className="text-3xl font-bold text-blue-600 mb-2">Acknowledgment</h1>
             <p>These are the Terms and Conditions governing the use of this Service and the agreement that operates between You and the Company. These Terms and Conditions set out the rights and obligations of all users regarding the use of the Service.</p>
@@ -96,7 +97,8 @@ export default function Terms() {
             <h1 className="text-3xl font-bold text-blue-600 mb-2">Contact Us</h1>
             <p>If you have any questions about these Terms and Conditions, You can contact us:</p>
             <ul>
-            <li>By visiting this page on our website: <Link href="/#contacts" className="text-blue-600">https://www.raulcarini.com/#contacts</Link></li>
+            <li>By email: <Link href="mailto:dev@raulcarini.com" className="text-blue-600">dev@raulcarini.com</Link></li>
+            <li>By visiting this page on our website: <Link href="https://www.raulcarini.com/#contacts" className="text-blue-600">www.raulcarini.com/#contacts</Link></li>
             </ul>
         </div>
       </main>
