@@ -41,19 +41,23 @@ export async function getStaticProps(){
   var skills = [
     {
       language: "PYTHON",
-      percentage: "85%"
+      percentage: "85%",
+      color: "bg-blue-600",
     },
     {
       language: "JAVASCRIPT",
-      percentage: "75%"
+      percentage: "75%",
+      color: "bg-yellow-500",
     },
     {
       language: "HTML/CSS",
-      percentage: "90%"
+      percentage: "90%",
+      color: "bg-red-600",
     },
     {
       language: "JAVA",
-      percentage: "50%"
+      percentage: "50%",
+      color: "bg-orange-600",
     }
   ]
     return {

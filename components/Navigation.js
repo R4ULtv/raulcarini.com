@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { useRouter } from 'next/router';
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
@@ -59,7 +58,7 @@ export default function Navigation() {
             </a> */}
           </div>
           <div className="-my-2 -mr-2 md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-blue-50 p-2 text-blue-400 hover:bg-blue-100 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-blue-50 p-2 text-blue-400 hover:bg-blue-100 hover:text-blue-600 focus:outline-none ring-2 ring-inset ring-blue-600">
               <span className="sr-only">Open menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
@@ -67,19 +66,15 @@ export default function Navigation() {
           <Popover.Group as="nav" className="hidden space-x-10 md:flex">
                 {resources.map((item) => (
                   item.href == "/" ?(
-                    <Link key={item.name} href={item.href} className="-m-3 flex items-center rounded-lg p-3 bg-blue-100">
+                    <Link key={item.name} href={item.href} className="-m-3 flex items-center rounded-lg p-3 hover:bg-blue-100 duration-150">
                       <item.icon className="h-6 w-6 flex-shrink-0 text-blue-600" aria-hidden="true" />
                       <span className="ml-3 text-base font-semibold text-gray-900">{item.name}</span>
                     </Link>
                   )
                   : (
-                    <a
-                    key={item.name}
-                    href={item.href}
-                    className="-m-3 flex items-center rounded-lg p-3 hover:bg-blue-50"
-                    >
-                    <item.icon className="h-6 w-6 flex-shrink-0 text-blue-600" aria-hidden="true" />
-                    <span className="ml-3 text-base font-semibold text-gray-900">{item.name}</span>
+                    <a key={item.name} href={item.href} className="-m-3 flex items-center rounded-lg p-3 hover:bg-blue-100 duration-150">
+                      <item.icon className="h-6 w-6 flex-shrink-0 text-blue-600" aria-hidden="true" />
+                      <span className="ml-3 text-base font-semibold text-gray-900">{item.name}</span>
                     </a>
                   )
                 ))} 
@@ -110,7 +105,7 @@ export default function Navigation() {
                   />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-blue-50 p-2 text-blue-400 hover:bg-blue-100 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-blue-50 p-2 text-blue-400 hover:bg-blue-100 hover:text-blue-600 focus:outline-none ring-2 ring-inset ring-blue-600">
                     <span className="sr-only">Close menu</span>
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -120,13 +115,13 @@ export default function Navigation() {
                 <nav className="grid gap-y-8">
                   {resources.map((item) => (
                     item.href == "/" ?(
-                      <Link key={item.name} href={item.href} className="-m-3 flex items-center rounded-lg p-3 bg-blue-100">
+                      <Link key={item.name} href={item.href} className="-m-3 flex items-center rounded-lg p-3 hover:bg-blue-100 duration-150">
                         <item.icon className="h-6 w-6 flex-shrink-0 text-blue-600" aria-hidden="true" />
                         <span className="ml-3 text-base font-semibold text-gray-900">{item.name}</span>
                       </Link>
                     )
                     : (
-                      <a key={item.name} href={item.href} className="-m-3 flex items-center rounded-md p-3 hover:bg-blue-50">
+                      <a key={item.name} href={item.href} className="-m-3 flex items-center rounded-lg p-3 hover:bg-blue-100 duration-150">
                         <item.icon className="h-6 w-6 flex-shrink-0 text-blue-600" aria-hidden="true" />
                         <span className="ml-3 text-base font-semibold text-gray-900">{item.name}</span>
                       </a>

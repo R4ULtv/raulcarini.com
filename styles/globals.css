@@ -12,10 +12,10 @@ body {
 }
 ::-webkit-scrollbar{
   width: 10px;
-  background-color: #ffffff;
+  background-color: #eff6ff;
 }
 ::-webkit-scrollbar-track{
-  border: 5px solid #ffffff;
+  border: 5px solid #eff6ff;
 }
 ::-webkit-scrollbar-thumb{
   background: #2563eb;
@@ -28,4 +28,11 @@ body {
 
 #terms span{
   font-weight: bold;
+}
+.cls-1{
+  fill:none;
+  stroke:#2563eb;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-width:4px;
 }
