@@ -1,8 +1,8 @@
 import Image from "next/image"
-
+import { motion } from "framer-motion"
 export default function Projects(data) {
     return (
-        <div className="pt-20 p-10 animate-fadeIn" id="projects">
+        <motion.div className="pt-20 p-10" id="projects"  initial="hidden" whileInView="visible" viewport={{ once: true }}>
             <p className="text-center text-3xl font-bold text-blue-600 underline underline-offset-8">Projects</p>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 my-8 items-center mx-auto max-w-7xl gap-x-8 gap-y-8 justify-items-center">
                 {data.images.map((item) => (
@@ -12,6 +12,6 @@ export default function Projects(data) {
                     </a>
                 ))}
             </div>
-        </div>
+        </motion.div>
     )
 }

@@ -8,7 +8,7 @@ const draw = {
             pathLength: 1,
             opacity: 1,
             transition: {
-                pathLength: { delay, type: "tween", duration: 3, bounce: 0 },
+                pathLength: { delay, type: "tween", duration: 1, bounce: 0 },
                 opacity: { delay, duration: 0.5 },
             }
         };
@@ -17,7 +17,7 @@ const draw = {
 const spawn = {
     hidden: { opacity: 0, scale: 0.75 },
     visible: (i) => {
-        const delay = 4.75
+        const delay = 2.75
         return{ opacity: 1, scale: 1, transition: { opacity: {delay, duration: 0.5}, scale: {delay, duration: 0.5}}}
     }
 }
@@ -62,8 +62,8 @@ export default function Main() {
                     <motion.p initial="hidden" variants={spawn} animate="visible" className="mt-2 text-lg font-medium text-center">Who I am ? Do you want to contact me?</motion.p>
                 </div>
                 <motion.div initial="hidden" variants={spawn} animate="visible" className="self-center flex items-center justify-center flex-col md:flex-row">
-                    <a className="border-2 border-blue-600 py-3 px-10 rounded-lg font-bold shadow-lg shadow-blue-500/50 w-50 m-2 hover:scale-105 duration-150" href="#about">About Me</a>
-                    <a className="border-2 border-blue-600 bg-blue-600 py-3 px-10 rounded-lg text-white font-bold shadow-lg shadow-blue-500/50 w-50 m-2 hover:scale-105 duration-150" href="#contacts">Contact Me</a>
+                    <a className="border-2 border-blue-600 py-3 px-10 rounded-lg font-bold shadow-lg shadow-blue-500/50 w-50 m-2 hover:scale-105 duration-150 w-44 text-center" href="#about">About Me</a>
+                    <a className="border-2 border-blue-600 bg-blue-600 py-3 px-10 rounded-lg text-white font-bold shadow-lg shadow-blue-500/50 w-50 m-2 hover:scale-105 duration-150 w-44 text-center" href="#contacts">Contact Me</a>
                 </motion.div>
             </div>
         </div>

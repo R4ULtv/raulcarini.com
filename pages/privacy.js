@@ -15,7 +15,7 @@ export default function Privacy() {
       
     <Navigation/>
 
-      <main className="pt-20 p-10 text-justify text-gray-900 grid" id="terms">
+      <main className="pt-20 p-5 text-justify text-gray-900 grid bg-gradient-to-b from-blue-100 to-blue-50" id="terms">
         <div className="place-self-center max-w-5xl">
             <h1 className="text-3xl font-bold text-blue-600 mb-2">Privacy Policy</h1>
             <p>Last updated: May 13, 2023</p>
